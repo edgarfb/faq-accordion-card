@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  color: #aaa;
+  font-family: "Lexend Deca", sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.attribution a {
+  color: #006970;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  background: violet;
+  padding: 1rem;
+  padding-top: 10rem;
+  min-width: 375px;
+}
+
+.card-container {
+  background: white;
+  padding: 1rem;
+  padding-top: 6rem;
+  border-radius: 1.5rem;
+  position: relative;
+}
+.card-container .main-img {
+  position: absolute;
+  top: -29%;
+}
+.card-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card-container .card-faq-box .card-faq-title {
+  display: flex;
+  justify-content: space-between;
+}
+.card-container .card-faq-box .card-faq-title .btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+.card-container .card-faq-box .card-faq-title .btn:hover {
+  cursor: pointer;
+}
+.card-container .card-faq-box h3, .card-container .card-faq-box p {
+  color: #787887;
+}
+
+.btn-up {
+  transform: rotate(180deg);
+}
+
+.info-hidden {
+  display: none;
+}
+
+.info-show {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */

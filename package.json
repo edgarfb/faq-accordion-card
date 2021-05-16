@@ -1,0 +1,29 @@
+{
+  "name": "faq-accordion-card",
+  "version": "1.0.0",
+  "description": "Frontend Mentor challanges easy to pro",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.32.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgarfb/faq-accordion-card.git"
+  },
+  "keywords": [
+    "faq",
+    "accordion",
+    "card"
+  ],
+  "author": "Edgar Fernando Britez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edgarfb/faq-accordion-card/issues"
+  },
+  "homepage": "https://github.com/edgarfb/faq-accordion-card#readme"
+}

@@ -1,0 +1,86 @@
+// basic reset and commons styles
+@use "_common";
+
+// colors
+$dark-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+$gradient-violet: hsl(273, 75%, 66%);
+$gradient-blue: hsl(240, 73%, 65%);
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+
+
+.container {
+    background: violet;
+    padding: 1rem;
+    padding-top: 10rem;
+    min-width: 375px;
+    
+    
+}
+
+
+
+.card-container {
+    background: white;
+    padding: 1rem;
+    padding-top: 6rem;
+    border-radius: 1.5rem;
+    position: relative;
+
+    .main-img {
+        position: absolute;
+        top: -29%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .card-faq-box {
+        .card-faq-title {
+            display: flex;
+            justify-content: space-between;
+
+            .btn {
+                border: none;
+                background: transparent;
+                padding: 0;
+            }
+            .btn:hover {
+                cursor: pointer;
+            }
+
+        }
+
+
+        h3, p {
+            color: $dark-grayish-blue;
+        }
+
+    }
+}
+
+
+// this class will be apply when the user clicked the .btn element
+// JS
+.btn-up {
+    transform: rotate(180deg);
+}
+
+.info-hidden {
+    display: none;
+}
+
+.info-show {
+    display: block;
+}
