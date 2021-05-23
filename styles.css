@@ -25,22 +25,34 @@ body {
 }
 
 .container {
-  background: violet;
+  background-image: linear-gradient(to top, #6565e7, #af67e9);
+  height: 100vh;
   padding: 1rem;
   padding-top: 10rem;
-  min-width: 375px;
+  min-width: 350px;
+  position: relative;
+}
+
+.main-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main-img figure {
+  position: absolute;
+  z-index: 10;
+}
+.main-img .img-woman-box {
+  top: -119px;
+  margin-left: 1rem;
 }
 
 .card-container {
   background: white;
   padding: 1rem;
-  padding-top: 6rem;
+  padding-top: 100px;
   border-radius: 1.5rem;
   position: relative;
-}
-.card-container .main-img {
-  position: absolute;
-  top: -29%;
 }
 .card-container h2 {
   text-align: center;
@@ -67,12 +79,45 @@ body {
   transform: rotate(180deg);
 }
 
-.info-hidden {
+.p-hide {
   display: none;
+}
+
+.info-hidden {
+  height: 0;
+  overflow: hidden;
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  margin: 0;
 }
 
 .info-show {
   display: block;
+  margin: 0;
+  overflow: hidden;
+  animation-name: show;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes show {
+  from {
+    height: 0;
+  }
+  to {
+    height: 50px;
+  }
+}
+@keyframes hide {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 0px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
