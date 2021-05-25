@@ -14,6 +14,7 @@ $gradient-blue: hsl(240, 73%, 65%);
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
+    box-sizing: border-box;
     
     
 }
@@ -21,45 +22,40 @@ body {
 // MOBILE
 .container {
     background-image: linear-gradient(to top, $gradient-blue, $gradient-violet);
-    height: 100vh;
-    padding: 1rem;
-    padding-top: 10rem;
+    // The viewpor woks width ou padding.... margin??
     min-width: 350px;
-    position: relative;
     
 }
+.faq-container {
+    padding: 10rem 1rem 5rem 1rem;
+}
 
-.main-img {
+.woman-box {
+    background: white;
+    border-radius: 1.5rem 1.5rem 0 0;
     position: relative;
+    height: 100px;
     display: flex;
     justify-content: center;
+
     figure {
+        margin: 0;
+        border-radius: 1rem;
         position: absolute;
+        top: 0;
         z-index: 10;
     }
-    .img-woman-box {
-        top: -119px;
-        margin-left: 1rem;
+    .bg-pattern {
+        top: 0;
+    }
+    .woman-img {
+        top: -108px;
+        margin-right: 2rem;
     }
 }
 
 
-// .main-img, .sec-img {
-//     display: flex;
-//     justify-content: center;
-//     .img-woman {
-//         position: absolute;
-//         z-index: 10;
-//         top: 11%;
-//         margin-right: 30px;
-//     }
-//     .img-bg {
-//         position: absolute;
-//         z-index: 9;
-//         top: 24%;
-//         margin-right: 40pxs;
-//     }
-// }
+
 
 
 
@@ -67,8 +63,7 @@ body {
 .card-container {
     background: white;
     padding: 1rem;
-    padding-top: 100px;
-    border-radius: 1.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
     position: relative;
 
     
@@ -98,6 +93,9 @@ body {
 
         h3, p {
             color: $dark-grayish-blue;
+        }
+        .faq-title {
+            cursor: pointer;
         }
 
     }
@@ -135,6 +133,9 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
+.title-selected {
+    color: $dark-blue !important;
+}
 
 // animation for accordion
 @keyframes show {
@@ -158,6 +159,7 @@ body {
 
 // desktop 
 @media only screen and (min-width: 600px) {
+
     
 }
 

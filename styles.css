@@ -7,10 +7,6 @@ body {
 .attribution {
   color: #aaa;
   font-family: "Lexend Deca", sans-serif;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .attribution a {
@@ -22,36 +18,45 @@ body {
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
+  box-sizing: border-box;
 }
 
 .container {
   background-image: linear-gradient(to top, #6565e7, #af67e9);
-  height: 100vh;
-  padding: 1rem;
-  padding-top: 10rem;
   min-width: 350px;
-  position: relative;
 }
 
-.main-img {
+.faq-container {
+  padding: 10rem 1rem 5rem 1rem;
+}
+
+.woman-box {
+  background: white;
+  border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
+  height: 100px;
   display: flex;
   justify-content: center;
 }
-.main-img figure {
+.woman-box figure {
+  margin: 0;
+  border-radius: 1rem;
   position: absolute;
+  top: 0;
   z-index: 10;
 }
-.main-img .img-woman-box {
-  top: -119px;
-  margin-left: 1rem;
+.woman-box .bg-pattern {
+  top: 0;
+}
+.woman-box .woman-img {
+  top: -108px;
+  margin-right: 2rem;
 }
 
 .card-container {
   background: white;
   padding: 1rem;
-  padding-top: 100px;
-  border-radius: 1.5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
   position: relative;
 }
 .card-container h2 {
@@ -73,6 +78,9 @@ body {
 }
 .card-container .card-faq-box h3, .card-container .card-faq-box p {
   color: #787887;
+}
+.card-container .card-faq-box .faq-title {
+  cursor: pointer;
 }
 
 .btn-up {
@@ -101,6 +109,10 @@ body {
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+}
+
+.title-selected {
+  color: #1d1e35 !important;
 }
 
 @keyframes show {
