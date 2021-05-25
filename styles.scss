@@ -44,6 +44,11 @@ body {
         position: absolute;
         top: 0;
         z-index: 10;
+
+        // this image will be display only in screen +600px with media queries
+        .bg-pattern-desk, .woman-desktop, .box-desktop {
+            display: none;
+        }
     }
     .bg-pattern {
         top: 0;
@@ -96,6 +101,10 @@ body {
         }
         .faq-title {
             cursor: pointer;
+            
+        }
+        .faq-title:hover {
+            color:hsl(14, 88%, 65%) !important;
         }
 
     }
@@ -159,7 +168,54 @@ body {
 
 // desktop 
 @media only screen and (min-width: 600px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        .faq-container {
+            display: flex;
+            padding: 10rem;
+            width: 80%;
+            .woman-box {
+                border-radius: 1.5rem 0 0 1.5rem;
+                .bg-pattern {
+                    top: -229px;
+                    left: -475px;
+                }
+                .woman-img {
+                    top: 80px;
+                    left: -75px;
+                }
+                .img-box {
+                    top: 10px;
+                    left: 0;
+                }
+            }
+            .woman-box, .card-container {
+                width: 50%;
+                padding: 2rem;
+                height: auto;
+                overflow: hidden;
+                
+                .bg-pattern-mobile, .woman-mobile {
+                    display: none;
+                }
+                .bg-pattern-desk, .woman-desktop, .box-desktop {
+                    display: block;
+                }
 
+            }
+        }
+
+        .card-container {
+            // border-radius: 0 1.5rem 1.5rem 0;
+            border-radius: 0 1rem 1rem 0;
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+    
     
 }
 

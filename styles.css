@@ -7,6 +7,8 @@ body {
 .attribution {
   color: #aaa;
   font-family: "Lexend Deca", sans-serif;
+  position: absolute;
+  bottom: 0;
 }
 
 .attribution a {
@@ -45,6 +47,9 @@ body {
   top: 0;
   z-index: 10;
 }
+.woman-box figure .bg-pattern-desk, .woman-box figure .woman-desktop, .woman-box figure .box-desktop {
+  display: none;
+}
 .woman-box .bg-pattern {
   top: 0;
 }
@@ -81,6 +86,9 @@ body {
 }
 .card-container .card-faq-box .faq-title {
   cursor: pointer;
+}
+.card-container .card-faq-box .faq-title:hover {
+  color: #f47c57 !important;
 }
 
 .btn-up {
@@ -129,6 +137,51 @@ body {
   }
   to {
     height: 0px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .container .faq-container {
+    display: flex;
+    padding: 10rem;
+    width: 80%;
+  }
+  .container .faq-container .woman-box {
+    border-radius: 1.5rem 0 0 1.5rem;
+  }
+  .container .faq-container .woman-box .bg-pattern {
+    top: -229px;
+    left: -475px;
+  }
+  .container .faq-container .woman-box .woman-img {
+    top: 80px;
+    left: -75px;
+  }
+  .container .faq-container .woman-box .img-box {
+    top: 10px;
+    left: 0;
+  }
+  .container .faq-container .woman-box, .container .faq-container .card-container {
+    width: 50%;
+    padding: 2rem;
+    height: auto;
+    overflow: hidden;
+  }
+  .container .faq-container .woman-box .bg-pattern-mobile, .container .faq-container .woman-box .woman-mobile, .container .faq-container .card-container .bg-pattern-mobile, .container .faq-container .card-container .woman-mobile {
+    display: none;
+  }
+  .container .faq-container .woman-box .bg-pattern-desk, .container .faq-container .woman-box .woman-desktop, .container .faq-container .woman-box .box-desktop, .container .faq-container .card-container .bg-pattern-desk, .container .faq-container .card-container .woman-desktop, .container .faq-container .card-container .box-desktop {
+    display: block;
+  }
+  .container .card-container {
+    border-radius: 0 1rem 1rem 0;
+  }
+  .container .card-container h2 {
+    text-align: left;
   }
 }
 
