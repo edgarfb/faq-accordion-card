@@ -15,3 +15,8 @@
 .DS_Store
 
 .prettierignore
+
+
+# folder to ignore
+node_modules
+faq-accordion-card-main.zip

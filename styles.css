@@ -26,10 +26,15 @@ body {
 .container {
   background-image: linear-gradient(to top, #6565e7, #af67e9);
   min-width: 350px;
+  height: 100vh;
 }
 
 .faq-container {
   padding: 10rem 1rem 5rem 1rem;
+}
+
+.box-container {
+  display: none;
 }
 
 .woman-box {
@@ -47,7 +52,7 @@ body {
   top: 0;
   z-index: 10;
 }
-.woman-box figure .bg-pattern-desk, .woman-box figure .woman-desktop, .woman-box figure .box-desktop {
+.woman-box figure .bg-pattern-desk, .woman-box figure .woman-desktop {
   display: none;
 }
 .woman-box .bg-pattern {
@@ -139,16 +144,16 @@ body {
     height: 0px;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .container {
-    height: 100vh;
     display: flex;
     justify-content: center;
   }
   .container .faq-container {
     display: flex;
-    padding: 10rem;
+    padding: 10vh 11vh;
     width: 80%;
+    position: relative;
   }
   .container .faq-container .woman-box {
     border-radius: 1.5rem 0 0 1.5rem;
@@ -161,15 +166,13 @@ body {
     top: 80px;
     left: -75px;
   }
-  .container .faq-container .woman-box .img-box {
-    top: 10px;
-    left: 0;
+  .container .faq-container .woman-box {
+    overflow: hidden;
   }
   .container .faq-container .woman-box, .container .faq-container .card-container {
     width: 50%;
     padding: 2rem;
     height: auto;
-    overflow: hidden;
   }
   .container .faq-container .woman-box .bg-pattern-mobile, .container .faq-container .woman-box .woman-mobile, .container .faq-container .card-container .bg-pattern-mobile, .container .faq-container .card-container .woman-mobile {
     display: none;
@@ -177,7 +180,15 @@ body {
   .container .faq-container .woman-box .bg-pattern-desk, .container .faq-container .woman-box .woman-desktop, .container .faq-container .woman-box .box-desktop, .container .faq-container .card-container .bg-pattern-desk, .container .faq-container .card-container .woman-desktop, .container .faq-container .card-container .box-desktop {
     display: block;
   }
+  .container .box-container {
+    display: block;
+    position: absolute;
+    top: 294px;
+    left: -30px;
+    z-index: 1000;
+  }
   .container .card-container {
+    position: relative;
     border-radius: 0 1rem 1rem 0;
   }
   .container .card-container h2 {
