@@ -87,6 +87,7 @@ body {
         .card-faq-title {
             display: flex;
             justify-content: space-between;
+            border-bottom: 1px solid $light-grayish-blue;
 
             .btn {
                 border: none;
@@ -140,6 +141,7 @@ body {
 .info-show {
     display: block;
     margin: 0;
+    padding-top: .5rem;
     overflow: hidden;
     animation-name: show;
     animation-duration: .3s;
@@ -221,15 +223,8 @@ body {
 
         .card-container {
             position: relative;
-            // .img-box {
-            //     display: block;
-            //     border: 5px solid blue;
-            //     position: absolute !important;
-            //     top: 0;
-            //     z-index: 200 !important;
-            //     left: -20%;
-            // }
             border-radius: 0 1rem 1rem 0;
+            overflow-y: hidden;
             h2 {
                 text-align: left;
             }
@@ -238,9 +233,3 @@ body {
     
     
 }
-
-// @media only screen and (min-width: 1200px) {
-//     .faq-container {
-//         padding: 8vh 10vh;
-//     }
-// }
